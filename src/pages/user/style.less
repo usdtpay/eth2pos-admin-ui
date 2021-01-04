@@ -1,0 +1,143 @@
+@import '../../../node_modules/antd/es/style/themes/default.less';
+
+
+.main {
+  width: 368px;
+  align-self: center;
+  margin: auto;
+  margin-right: 28%;
+
+  @media screen and (max-width: @screen-sm) {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .icon {
+    margin-left: 16px;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .other {
+    margin-top: 24px;
+    line-height: 22px;
+    text-align: left;
+
+    .register {
+      float: right;
+    }
+  }
+
+  :global {
+    .antd-pro-login-submit {
+      width: 100%;
+      margin-top: 24px;
+    }
+  }
+
+  .loginBox {
+    max-width: 430px;
+    //min-height: 580px;
+    padding: 55px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    display: flex;
+    //justify-content: center;
+    flex-direction: column;
+    align-content: center;
+
+    .logoBox {
+      text-align: center;
+    }
+
+    .logo {
+      width: 210px;
+      margin-top: 15px;
+      height: 56px;
+      //background: black;
+    }
+  }
+}
+
+.getCaptcha {
+  color: #fff;
+  border-left: 2px solid #d8d8d8;
+  min-width: 100px;
+  text-align: center;
+  line-height: 12px;
+  position: absolute;
+  right: 0;
+  top: 12px;
+  z-index: 1;
+  cursor: pointer;
+
+  &[disabled] {
+    color: #fff;
+  }
+
+  &:hover {
+    color: #fff;
+    opacity: 0.5;
+  }
+
+}
+
+.loginForm {
+  min-width: 100px;
+  margin-top: 80px;
+
+  input {
+    color: white;
+  }
+}
+
+.loginFormForgot {
+  float: right;
+}
+
+.antColRtl .loginFormForgot {
+  float: left;
+}
+
+.loginFormButton {
+  width: 100%;
+}
+
+:global {
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+  }
+
+  .iconUserName {
+    background-image: url('../../assets/img/login_account.png');
+  }
+
+  .iconPassword {
+    background-image: url('../../assets/img/login_password.png');
+  }
+
+  .iconPhone {
+    background-image: url('../../assets/img/login_icon_phone.png');
+  }
+
+  .iconCaptcha {
+    background-image: url('../../assets/img/login_icon_yan.png');
+  }
+
+  .ant-form-item-has-error .ant-input,
+  .ant-form-item-has-error .ant-input-affix-wrapper,
+  .ant-form-item-has-error .ant-input:hover,
+  .ant-form-item-has-error .ant-input-affix-wrapper:hover {
+    background-color: transparent !important;
+  }
+}

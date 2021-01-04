@@ -1,0 +1,52 @@
+.btnGrid{
+  button{
+    margin-right: 10px;
+  }
+}
+.searchBox{
+  display: flex;
+  justify-content: flex-end;
+}
+.breadCrumb{
+  //margin: 10px 0;
+  word-break: break-all;
+}
+
+.fileBox{
+  margin-top:20px;
+}
+.progresError{
+  .fileName,.fileSize{
+    color: red;
+  }
+}
+.line-col{
+  line-height: 50px;
+}
+
+.progressBox{
+  display: flex;
+  &-left{
+    align-items: center;
+    line-height: 40px;
+    width: 80%;
+    display: flex;
+   .fileName{
+     width: 20%;
+   }
+    .fileSize{
+      width: 20%;
+      //min-width: 100px;
+      text-align: center;
+    }
+  }
+ &-right{
+   line-height: 40px;
+   width: 20%;
+
+   text-align: right;
+   span{
+     margin-left: 10px;
+   }
+ }
+}
